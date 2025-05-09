@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع التوعية بالأمن الرقمي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tahoma', Arial, sans-serif;
+            background-color: #f5f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .title {
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        .title h1 {
+            color: white;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .sidebar {
+            height: calc(100vh - 80px);
+            width: 150px;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            background: linear-gradient(to bottom, #34495e, #2c3e50);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+        
+        .content {
+            margin-right: 170px;
+            margin-left: 20px;
+            padding: 30px;
+            position: relative;
+            top: 100px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            min-height: calc(100vh - 160px);
+        }
+        
+        button {
+            padding: 12px 0;
+            width: 130px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .welcome-section {
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        .welcome-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .welcome-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        
+        .feature-box {
+            width: 30%;
+            min-width: 250px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border-top: 4px solid #3498db;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-box h3 {
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
+        
+        .feature-box p {
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: static;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px;
+            }
+            
+            .title {
+                position: static;
+            }
+            
+            .content {
+                margin-right: 20px;
+                margin-left: 20px;
+                top: 20px;
+            }
+            
+            button {
+                width: 120px;
+                margin: 5px;
+            }
+            
+            .feature-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>مرحباً بكم في موقع التوعية بالأمن الرقمي</h1> 
+    </div>
+    
+    <div class="sidebar">
+        <button onclick="document.location='threats.html'">التهديدات</button>
+        <button onclick="document.location='safety.html'">الأمان والحماية</button>
+        <button onclick="document.location='quiz.html'">اختبر نفسك</button>
+        <button onclick="document.location='contact.html'">تواصل معنا</button>
+    </div>
+    
+    <div class="content">
+        <div class="welcome-section">
+            <h2>أهلاً وسهلاً بكم</h2>
+            <p>اكتشف كيف تحمي نفسك على الإنترنت وتتعرف على التهديدات الشائعة في العالم الرقمي</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature-box">
+                <h3>التوعية بالتهديدات</h3>
+                <p>تعرف على أحدث التهديدات الأمنية الرقمية وكيفية التعرف عليها لتجنب الوقوع ضحيتها</p>
+            </div>
+            
+            <div class="feature-box">
+                <h3>نصائح الأمان</h3>
+                <p>أفضل الممارسات والأدوات التي تساعدك على حماية بياناتك وهويتك الرقمية</p>
+            </div>
+            
+            <div class="feature-box">
+                <h3>اختبارات تفاعلية</h3>
+                <p>اختبر معلوماتك من خلال اختبارات قصيرة لقياس مستوى وعيك الأمني الرقمي</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
